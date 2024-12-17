@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+h2 {
+    font-size: 2rem; 
+    text-align:left; 
+}
+
+
+
+/* Barra Superior */
+.top-bar {
+    background-color: #002855;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.top-bar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.top-bar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #003f7e;
+}
+
+/* Tabela de Vereadores */
+.vereadores-section {
+    padding: 50px;
+}
+
+.vereadores-section h2 {
+    text-align: center;
+    color: #002855;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #002855;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.foto-vereador {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.email-link {
+    color: #00509e;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse (opcional) */
+    color: #ffd900; /* Altera a cor ao passar o mouse (opcional) */
+}
+
+
+.footer {
+    background-color: #00264d;
+    color: #fdda44;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fdda44;
+    display: inline-block;
+  }
+  
+  .footer-section p, .footer-section a {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #fdda44;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-icons {
+    margin-top: 10px;
+  }
+  
+  .footer-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .footer-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  
