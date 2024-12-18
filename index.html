@@ -1,243 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Câmara Municipal de Wanderley</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="carousel.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="img/logoCamara.png" alt="Logo Câmara Municipal" />
-      </div>
-      <button class="hamburger" aria-label="Abrir menu" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav-header-container">
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="vereadores/vereadores.html">Vereadores</a></li>
-          <li><a href="#">Atividade Legislativa</a></li>
-          <li><a href="#">Participação</a></li>
-          <li><a href="#">Transparência</a></li>
-          <button class="menu-btn">Menu</button>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Câmara Municipal de Wanderley</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="carousel.css" />
+</head>
 
-    <main class="main-container">
-      <!-- Barra de Busca -->
-      <section class="search-bar">
-        <input
-          type="text"
-          placeholder="Digite o que procura e clique em buscar..."
-        />
-        <button class="search-btn">Buscar</button>
-      </section>
+<body>
+  <div class="blue-layer">
+    <svg viewBox="0 0 1400 160" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#222b52" d="
+        M0,40
+        C140,20 700,100 1400,100
+        L1400,0 
+        L0,0 
+        Z">
+      </path>
+    </svg>
+  </div>
+  
+   <div class="yellow-layer">
+    <svg viewBox="0 0 1400 160" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#e6b421" d="
+        M0,0
+        C140,20 700,100 1400,120
+        L1400,0 
+        L0,0 
+        Z">
+      </path>
+    </svg>
+  </div>
+  
 
-      <!-- Caixas de atalhos -->
-      <!-- Faixa de atalhos -->
-      <section class="shortcut-bar">
-        <a href="link/participe.html" class="shortcut-link"
-          >Fale com um Vereador</a
-        >
-        <a href="link/camaraExplica.html" class="shortcut-link"
-          >Câmara Explica</a
-        >
-        <a href="link/auditorioOnline.html" class="shortcut-link"
-          >Auditórios Online</a
-        >
-        <a href="link/cronograma.html" class="shortcut-link">Cronograma</a>
-        <a href="link/cronograma.html" class="shortcut-link">Vereadores</a>
-      </section>
+  <!-- Logo e Menu -->
+  <nav class="parte2">
+    <img src="img/logo/LOGO 2025.png" alt="Logo Câmara Municipal" class="logo" />
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Notícias</a>
+      <a href="#">Vereadores</a>
+    </div>
+  </nav>
 
-      <section class="carousel-content">
-        <div id="carousel-wrapper">
-          <div class="carousel-container">
-            <div class="carousel">
-              <div class="carousel-item active">
-                <img src="img/noticia.png" alt="Banner 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/noticias/1-4.jpg" alt="Banner 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/noticias/1-6.jpg" alt="Banner 3" />
-              </div>
-            </div>
+  <!-- Retângulo com Imagem dos Vereadores -->
+  <section class="parte3">
+    <div class="imagem-container">
+      <img src="img/logo/politicos.png" alt="Imagem Vereadores" class="imagem-grande" />
+    </div>
+  </section>
+
+  <!-- Retângulo com Imagem Legislativo -->
+  <section class="parte4">
+    <div class="imagem-container">
+      <img src="img_legislativo.jpg" alt="LEGISLATIVO - Biênio 2023/2024" class="imagem-grande" />
+    </div>
+  </section>
+
+  <!-- Rodapé Inicial -->
+  <footer class="rodape">
+    <a href="#" class="botao">Portal da Transparência</a>
+    <a href="#" class="botao">Ações de Enfrentamento</a>
+  </footer>
+
+  <!-- Carrossel -->
+  <section class="carousel-content">
+    <div id="carousel-wrapper">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="img/noticias/1.jpg" alt="Banner 1" />
           </div>
-          <div class="controls">
-            <button class="prev" onclick="prevSlide()">
-              &#10094; Anterior
-            </button>
-            <button class="next" onclick="nextSlide()">Próximo &#10095;</button>
+          <div class="carousel-item">
+            <img src="img/noticias/3.jpg" alt="Banner 2" />
           </div>
-        </div>
-      </section>
-
-      <section class="news">
-        <h3>Últimas Notícias</h3>
-        <div class="news-cards">
-          <div class="card">
-            <img src="img/gado.jpg" alt="Notícia 1" />
-            <h4>
-              <a href="link-para-noticia-1.html" rel="noopener noreferrer">
-                Rio TV Câmara prepara programação especial no Dia do Samba
-              </a>
-            </h4>
-            <p>
-              A relação entre a cidade do Rio de Janeiro e o samba é antiga.
-              Primeira música gravada como “samba”, em 1916, “Pelo Telefone”
-              descreve o cotidiano da cidade...
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="img/noticias/1-5.jpg" alt="Notícia 2" />
-            <h4>
-              <a href="link-para-noticia-2.html" rel="noopener noreferrer">
-                Agora é Lei: Idosos terão intérpretes de Libras em instituições
-              </a>
-            </h4>
-            <p>
-              A Câmara do Rio promulgou, nesta sexta-feira (29/11), a Lei
-              8.693/2024, que determina às Instituições de Longa Permanência e
-              Casas de Convivência e Lazer para Idosos...
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="img/noticias/1-6.jpg" alt="Notícia 3" />
-            <h4>
-              <a href="link-para-noticia-3.html" rel="noopener noreferrer">
-                Câmara do Rio recebe auditoria do Instituto Lixo Zero
-              </a>
-            </h4>
-            <p>
-              As instalações administradas pela Câmara do Rio receberam, nesta
-              sexta-feira (29/11), uma auditoria do Instituto Lixo Zero (ILZB),
-              empresa responsável por constatar os requisitos...
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="social-media">
-        <h3>REDES SOCIAIS</h3>
-        <p>Siga @camarWadewanderley nas redes sociais</p>
-        <div class="social-cards">
-          <!-- Caixa do Facebook -->
-          <div class="social-card">
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/camaradewanderley&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
-              title="Facebook Page"
-              frameborder="0"
-              allowfullscreen="true"
-              scrolling="no"
-              style="width: 100%; height: 100%; border: none; overflow: hidden"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-          </div>
-
-          <!-- Caixa do YouTube -->
-          <div class="social-card">
-            <iframe
-              src="https://www.youtube.com/embed/7BXlxNa9z7M"
-              title="YouTube Video"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-top">
-        <!-- Redes Sociais com Logos -->
-        <div class="social-icons">
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            aria-label="YouTube"
-          >
-            <img src="img/logo/sm_5aeee59357bbb.png" alt="YouTube" />
-            <span>YOUTUBE</span>
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <img src="img/logo/Instagram_icon.png.webp" alt="Instagram" />
-            <span>INSTAGRAM</span>
-          </a>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <img
-              src="img/logo/Facebook-Logo-PNG-Photo-Image.png"
-              alt="Facebook"
-            />
-            <span>FACEBOOK</span>
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <!-- Informação Geral -->
-        <div class="footer-primary">
-          <div class="section">
-            <p>
-              <strong>Câmara Municipal do Wanderley</strong><br />
-              R. José Fernandes<br />
-              Wanderley - BA<br />
-              Cep: 47940-000<br />
-              Tel.: (77) 3626-1183
-            </p>
-            <a href="mapa-do-site.html" target="_blank"></a>
-          </div>
-
-          <div class="section">
-            <h3>Acesso Restrito</h3>
-            <ul>
-              <li><a href="#" target="_blank">Correio CMRJ</a></li>
-              <li><a href="#" target="_blank">Intranet</a></li>
-              <li><a href="#" target="_blank">Sistema de Apoio</a></li>
-            </ul>
-          </div>
-        <!-- </div>
-        <div class="footer-secondary"> -->
-          <div class="section">
-            <h3>Menu</h3>
-            <ul>
-              <li><a href="#" target="_blank">Home</a></li>
-              <li><a href="#" target="_blank">Institucional</a></li>
-              <li><a href="#" target="_blank">Vereadores</a></li>
-              <li><a href="#" target="_blank">Atividade Parlamentar</a></li>
-              <li><a href="#" target="_blank">Transparência</a></li>
-              <li><a href="#" target="_blank">Comunicação</a></li>
-              <li><a href="#" target="_blank">Cidadania Ativa</a></li>
-            </ul>
-          </div>
-
-          <div class="section">
-            <h3>Privacidade</h3>
-            <ul>
-              <li><a href="#" target="_blank">Política de Privacidade</a></li>
-            </ul>
+          <div class="carousel-item">
+            <img src="img/noticias/9.jpg" alt="Banner 3" />
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="controls">
+        <button class="prev" onclick="prevSlide()">&#10094; Anterior</button>
+        <button class="next" onclick="nextSlide()">Próximo &#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notícias -->
+  <section class="news">
+    <h3>Últimas Notícias</h3>
+    <div class="news-cards">
+      <div class="card">
+        <img src="img/gado.jpg" alt="Notícia 1" />
+        <h4>
+          <a href="link-para-noticia-1.html" rel="noopener noreferrer">
+            Rio TV Câmara prepara programação especial no Dia do Samba
+          </a>
+        </h4>
+        <p>
+          A relação entre a cidade do Rio de Janeiro e o samba é antiga. Primeira música gravada como “samba”, em 1916...
+        </p>
+      </div>
+      <div class="card">
+        <img src="img/noticias/1-5.jpg" alt="Notícia 2" />
+        <h4>
+          <a href="link-para-noticia-2.html" rel="noopener noreferrer">
+            Agora é Lei: Idosos terão intérpretes de Libras em instituições
+          </a>
+        </h4>
+        <p>
+          A Câmara do Rio promulgou, nesta sexta-feira (29/11), a Lei 8.693/2024, que determina...
+        </p>
+      </div>
+      <div class="card">
+        <img src="img/noticias/1-6.jpg" alt="Notícia 3" />
+        <h4>
+          <a href="link-para-noticia-3.html" rel="noopener noreferrer">
+            Câmara do Rio recebe auditoria do Instituto Lixo Zero
+          </a>
+        </h4>
+        <p>
+          As instalações administradas pela Câmara do Rio receberam, nesta sexta-feira (29/11)...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section class="social-media">
+    <h3>REDES SOCIAIS</h3>
+    <p>Siga @camarWadewanderley nas redes sociais</p>
+    <div class="social-cards">
+      <!-- Caixa do Facebook -->
+      <div class="social-card">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/camaradewanderley&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+          title="Facebook Page"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+          style="width: 100%; height: 100%; border: none; overflow: hidden"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+      </div>
+      <!-- Caixa do YouTube -->
+      <div class="social-card">
+        <iframe
+          src="https://www.youtube.com/embed/7BXlxNa9z7M"
+          title="YouTube Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Completo -->
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Redes Sociais com Logos -->
+      <div class="social-icons">
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+          <img src="img/logo/icons8-youtube-48.png" alt="YouTube" />
+          <span>YOUTUBE</span>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="img/logo/icons8-instagram-48.png" alt="Instagram" />
+          <span>INSTAGRAM</span>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <img src="img/logo/icons8-facebook-48.png" alt="Facebook" />
+          <span>FACEBOOK</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Informação Geral -->
+      <div class="footer-primary">
+        <div class="section">
+          <p>
+            <strong>Câmara Municipal do Wanderley</strong><br />
+            R. José Fernandes<br />
+            Wanderley - BA<br />
+            Cep: 47940-000<br />
+            Tel.: (77) 3626-1183
+          </p>
+          <a href="mapa-do-site.html" target="_blank"></a>
+        </div>
+        <div class="section">
+          <h3>Acesso Restrito</h3>
+          <ul>
+            <li><a href="#" target="_blank">Correio CMRJ</a></li>
+            <li><a href="#" target="_blank">Intranet</a></li>
+            <li><a href="#" target="_blank">Sistema de Apoio</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">Institucional</a></li>
+            <li><a href="#" target="_blank">Vereadores</a></li>
+            <li><a href="#" target="_blank">Atividade Parlamentar</a></li>
+            <li><a href="#" target="_blank">Transparência</a></li>
+            <li><a href="#" target="_blank">Comunicação</a></li>
+            <li><a href="#" target="_blank">Cidadania Ativa</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Privacidade</h3>
+          <ul>
+            <li><a href="#" target="_blank">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
+</body>
 </html>
