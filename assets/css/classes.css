@@ -1,0 +1,90 @@
+
+.main-bg {
+  background-image: url('../img/exx.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.sec-bg {
+  background-image: url('../img/camara.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.trans-bg {
+  background-image: url('../img/trans.png');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.non-bg {
+ background-color: dimgrey;
+  color: var(--white-color);
+}
+
+.bienio-border {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+justify-content: center;
+}
+.bienio {
+  border: 4px solid blue;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 86px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.logo-bienio {
+  width: 240px;
+}
+
+.texto-bienio {
+  color: blue;
+  font-size: 32px;
+}
+
+.qr-bienio {
+  /* position: absolute; */
+  /* right: 200px; */
+  width: 104px;
+  border: 1px solid black;
+  padding: 4px;
+  background: white;
+  box-shadow: 1px 1px 8px 1px;
+}
+
+
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 65px;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
