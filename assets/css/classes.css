@@ -32,8 +32,8 @@
 justify-content: center;
 }
 .bienio {
-  border: 4px solid blue;
-  background-color: #fff;
+  border: 4px solid #6161ee;
+  background-color: #ffffff;
   border-radius: 8px;
   width: 100%;
   height: 86px;
@@ -50,13 +50,11 @@ justify-content: center;
 }
 
 .texto-bienio {
-  color: blue;
-  font-size: 32px;
+  color: #6161ee;
+  font-size: 26px;
 }
 
 .qr-bienio {
-  /* position: absolute; */
-  /* right: 200px; */
   width: 104px;
   border: 1px solid black;
   padding: 4px;
@@ -87,4 +85,50 @@ justify-content: center;
 body .full-width {
   width: 100%;
   flex: 1 1 100%;
+}
+
+@media (max-width: 998px) {
+  .texto-bienio {
+    color: #6161ee;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bienio {
+    gap: 16px;
+  }
+  .texto-bienio {
+    font-size: 18px;
+  }
+
+  .logo-bienio {
+    width: 200px;
+  }
+}
+
+  @media (max-width: 600px) {
+  .bienio-border {
+    padding: 0;
+  }
+  .bienio {
+    height: auto;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .logo-bienio {
+    width: 200px;
+  }
+  
+  .texto-bienio {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .qr-bienio {
+    width: 96px;
+  }
 }
