@@ -229,6 +229,8 @@
 @media (max-width: 800px) {
   .social-card {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .grid-one-content {
