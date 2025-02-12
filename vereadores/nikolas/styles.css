@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+.info-vereador {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.btn-back {
+    display: block;
+    width: fit-content;
+    padding: 8px 15px;
+    background: #00509e;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-back:hover {
+    background: #003f7e;
+}
+
+.top-info h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+.profile p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.partido {
+    font-weight: bold;
+    color: #00509e;
+}
+
+.biography h2,
+.related-news h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.news-item a {
+    display: block;
+    text-decoration: none;
+    color: #00509e;
+    margin: 10px 0;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}

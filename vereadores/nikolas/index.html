@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Nikolas Ferreira</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-top: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="https://conteudo.imguol.com.br/c/noticias/5d/2024/04/02/19mar2024---o-deputado-federal-nikolas-ferreira-pl-mg-durante-votacao-de-propostas-na-camara-1712083007546_v2_1920x1183.jpg" alt="Nikolas Ferreira">
-        <h1>Nikolas Ferreira</h1>
-        <p>Nikolas Ferreira é um político brasileiro, atualmente deputado federal por Minas Gerais. Conhecido por sua atuação nas redes sociais e defesa de pautas conservadoras.</p>
+  </head>
+  <body>
+    <div class="info-vereador">
+      <button class="btn-back" onclick="history.back()">Voltar</button>
+      <div class="top-info">
+        <h1>Rafael Saldanha</h1>
+        <hr />
+      </div>
+      <div class="main-content">
+        <div class="profile">
+          <img
+            src="../imgVereadores/rafaelsaldanha.jpg"
+            alt="Foto do Vereador"
+          />
+          <p><strong>Nome civil:</strong> Rafael Saldanha Silva</p>
+          <p><strong>Data de nascimento:</strong> 15/08/1966</p>
+          <p><strong>Partido:</strong> <span class="partido">PSD</span></p>
+          <p><strong>Naturalidade:</strong> Wanderley</p>
+          <p>
+            <strong>Endereço:</strong> Praça Floriano s/nº<br />
+            Centro - Wanderley - BA CEP: 47940-000
+          </p>
+          <p><strong>Telefones:</strong></p>
+          <p>
+            <strong>E-mail:</strong>
+            <a href="mailto:vereadorafaelsaldanha@gmail.com"
+              >vereadorafaelsaldanha@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="biography">
+          <h2>Sobre o Vereador</h2>
+          <p>
+            Rafael é vereador em Wanderley, uma cidade encantada e cheia de
+            mistérios. Apaixonado por sua cidade e pelo bem-estar de seus
+            moradores, trabalha há anos promovendo desenvolvimento,
+            transparência e sustentabilidade.
+          </p>
+        </div>
+      </div>
+      <div class="related-news">
+        <h2>Notícias Relacionadas</h2>
+        <div class="news-item">
+          <a href="noticia1.html">
+            <p>
+              <strong>Dez 10, 2024</strong> - Câmara recebe Secretaria de
+              Fazenda para apresentação de metas fiscais.
+            </p>
+          </a>
+        </div>
+        <div class="news-item">
+          <a href="noticia2.html">
+            <p>
+              <strong>Nov 13, 2024</strong> - Audiência sobre previsão
+              orçamentária para 2025.
+            </p>
+          </a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

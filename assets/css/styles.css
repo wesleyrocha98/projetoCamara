@@ -37,6 +37,16 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.social-redes .social-cards a {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .social-card {
